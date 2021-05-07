@@ -11,6 +11,11 @@ iin_checker = InnChecker()
 VALIDATION_KEY = "repaatafterme"
 
 
+@app.route("/test")
+def testServer():
+    return "Success"
+
+
 @app.route('/compare-faces', methods=["POST"])
 def compare():
     file = None
