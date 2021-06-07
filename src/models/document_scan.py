@@ -37,7 +37,7 @@ class SimpleDigitModel(nn.Module):
 
 class InnChecker:
 
-    def __init__(self, path="src/models/checkpoints/simple_digit_model.pt"):
+    def __init__(self, path="src/models/checkpoints/simple_digit_model_end.pt"):
         self.model = SimpleDigitModel()
         checkpoint = torch.load(path)
         self.model.load_state_dict(checkpoint['model_state_dict'])
